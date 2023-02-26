@@ -5,19 +5,25 @@
     --secondaryTextColor-light:rgb(51 51 51);
     --mainLinkColor-light:#0da2b8;
     --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
-
+    --mainBgColor-light:rgb(249, 250, 251);
+    --mainShadowColor-light:#dddddd;
+    --mainTableHeaderColor-light:#f5f5f5;
+    
     --mainTextColor-dark:#fff;
     --secondaryTextColor-dark:#adb0b1;
     --mainLinkColor-dark:rgb(30, 190,214);
     --mainBorderColor-dark:#2b3031;
     --mainBgColor-dark:#131415;
+    --mainShadowColor-dark:#303035;
+    --mainTableHeaderColor-dark:#1c1f23;
 
     --mainTextColor:var(--mainTextColor-light);
     --secondaryTextColor:var(--secondaryTextColor-light);
     --mainLinkColor:var(--mainLinkColor-light);
     --mainBorderColor:var(--mainBorderColor-light);
     --mainBgColor:var(--mainBgColor-light);
+    --mainTableHeaderColor:var(--mainTableHeaderColor-light);
+    --mainShadowColor:var(--mainShadowColor-light)
 }
 
 * {
@@ -140,6 +146,30 @@ li {
 
 .card-project a:hover{
     color: var(--mainLinkColor);
+}
+
+.card-education {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--mainShadowColor);
+    color: var(--mainTextColor);
+}
+
+.table-education {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table-education thead {
+    background-color: var(--mainTableHeaderColor);
+}
+
+.table-education th,td {
+    padding: 0.9em;
+}
+
+.table-education tr {
+    border-bottom: 1px solid var(--mainBorderColor);
 }
 
 @media(max-width:600px) {
