@@ -12,7 +12,7 @@
 <body>
     <div id="container-main">
         <section id="wrapper-hero" class="section-page">
-            <img class="profile-pic" src="./assets/images/profile.png" alt="Profile image">
+            <img id="profile-pic" src="./assets/images/profile.png" alt="Profile image">
             <div>
                 <h1 class="username">Vivek Sharma</h1>
                 <p class="bio">Software Developer👨🏻‍💻 Kotlin🚀 Android📱</p>
@@ -51,7 +51,10 @@
                     <span>Firebase, NodeJS</span>
                 </div>
                 <div class="card-techstack">
-                    <span>Retrofit, Room, Dagger Hilt, Paging, Coroutines, Flows</span>
+                    <span>Retrofit, Room, Dagger Hilt, Paging</span>
+                </div>
+                <div class="card-techstack">
+                    <span>Coroutines, Flows</span>
                 </div>
             </div>
         </section>
@@ -140,7 +143,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <strong> 12 Th Class ( CBSE Board )</strong> from Mayur Public School , Delhi
+                            <strong> 12 th Class ( CBSE Board )</strong> from Mayur Public School , Delhi
                         </td>
                         <td>
                             <p>93 %</p>
@@ -154,5 +157,14 @@
         </section>
     </div>
 </body>
+
+<script>
+    var toggleDarkTheme = document.getElementById("profile-pic")
+
+    toggleDarkTheme.onclick = function () {
+        console.log("clicked")
+        document.body.classList.toggle("theme-dark")
+    }
+</script>
 
 </html>

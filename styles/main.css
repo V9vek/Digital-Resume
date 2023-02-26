@@ -8,14 +8,6 @@
     --mainBgColor-light:rgb(249, 250, 251);
     --mainShadowColor-light:#dddddd;
     --mainTableHeaderColor-light:#f5f5f5;
-    
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-    --mainShadowColor-dark:#303035;
-    --mainTableHeaderColor-dark:#1c1f23;
 
     --mainTextColor:var(--mainTextColor-light);
     --secondaryTextColor:var(--secondaryTextColor-light);
@@ -26,11 +18,30 @@
     --mainShadowColor:var(--mainShadowColor-light)
 }
 
+.theme-dark {
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    --mainShadowColor-dark:#303035;
+    --mainTableHeaderColor-dark:#1c1f23;
+
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+    --mainTableHeaderColor:var(--mainTableHeaderColor-dark);
+    --mainShadowColor:var(--mainShadowColor-dark)
+}
+
 * {
     font-family: 'Readex Pro';
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
+    transition: 0.3s;
 }
 
 body {
@@ -77,7 +88,7 @@ li {
     line-height: 1em;
 }
 
-.profile-pic {
+#profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
